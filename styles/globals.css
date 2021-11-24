@@ -1,9 +1,12 @@
-html,
-body {
+@font-face {
+  font-family: myFirstFont;
+  src: url('/fonts/Merriweather-Regular.ttf');
+}
+
+html, body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: myFirstFont, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -13,4 +16,81 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  *border-collapse: expression('separate', cellSpacing='10px');
+}
+
+table thead th {
+  padding: 10px;
+}
+
+table tbody td {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  padding: 10px;
+}
+
+table tbody td:last-of-type {
+  border-right: 1px solid black;
+}
+
+table tbody td:first-of-type {
+  border-left: 1px solid black;
+}
+
+div.highlight {
+  position: relative;
+}
+
+
+code.language-javascript::before {
+  width: 32px;
+  height: 32px;
+  background: url('/assets/javascript.png');
+  background-size: cover;
+  position: absolute;
+  top: 15px;
+  right: 8px;
+  content: " ";
+}
+
+code.language-bash::before {
+  width: 32px;
+  height: 32px;
+  background: url('/assets/bash.png');
+  background-size: cover;
+  position: absolute;
+  top: 15px;
+  right: 8px;
+  content: " ";
+}
+
+code.language-css::before {
+  width: 32px;
+  height: 48px;
+  background: url('/assets/css.png');
+  background-size: cover;
+  position: absolute;
+  top: 15px;
+  right: 8px;
+  content: " ";
+}
+
+code.language-css .hljs-attribute {
+  color: rgb(141, 197, 227);
+}
+
+code.language-html::before {
+  width: 32px;
+  height: 32px;
+  background: url('/assets/html.png');
+  background-size: cover;
+  position: absolute;
+  top: 15px;
+  right: 8px;
+  content: " ";
 }

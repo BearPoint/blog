@@ -1,0 +1,51 @@
+.list {
+    list-style-type: none;
+    margin: 0;
+}
+
+.list li {
+    padding: 10px 10px;
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+.list li:hover {
+    background-color: red;
+}
+
+.list li:last-child {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .list.open {
+        padding-top: 40px;
+    }
+
+    .list li {
+        display: none;
+    }
+
+    .list li:last-child {
+        float: right;
+        display: block;
+    }
+
+    .list.open {
+        position: relative;
+    }
+
+    .list.open li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .list.open li {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
