@@ -43,19 +43,7 @@ const PostPage = ({ meta, content, header }) => {
                     font-size: 12px;
                     
 				}
-				div.highlight {
-					position: relative;
-					background-color:red;
-
-				}
-				code.language-javascript::befor {
-					width: 32px;
-					height: 32px;
-					background-color:red;
-					position: absolute;
-					top:-12px;
-					rigth: 8px;
-				}
+				
 				
             `}</style>
 		</>

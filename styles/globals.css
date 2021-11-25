@@ -46,6 +46,9 @@ div.highlight {
   position: relative;
 }
 
+code {
+  padding-left: 20px !important;
+}
 
 code.language-javascript::before {
   width: 32px;

@@ -1,15 +1,11 @@
 import '../styles/globals.css'
 import { Header, Footer } from './../components'
 import Head from 'next/head'
-import React, { useEffect } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import hljs from 'highlight.js';
-import 'highlight.js/styles/github.css';
+
 
 const MyApp = ({ Component, pageProps }) => {
-	useEffect(() => {
-		hljs.highlightAll();
-	}, [])
 	return (
 		<>
 			<Head>
