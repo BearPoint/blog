@@ -1,3 +1,3 @@
 export { Header } from './header'
 export { Footer } from './footer'
-export { Information } from './Information'
+export { Tag } from './tag'

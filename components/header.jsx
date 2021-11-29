@@ -7,7 +7,7 @@ export const Header = () => {
 		<>
 			<header>
 				<div className='container'>
-					<div >
+					<div  className="logo-container">
 						<Link href="/">
 							<a className='logo'>
 								<Image src='/assets/bear.png' width={40} height={40} />
@@ -30,25 +30,26 @@ export const Header = () => {
 				</div>
 			</header>
 			<style jsx>{`
-				.container {
-						padding: 10px;
-						display: flex;
-						justify-content: space-between;
-						algin-items: center;
-						height: 80px;
-						max-width: 800px;
-						margin: 0 auto;
-				}
 				header {
-						background-color: cadetblue;
+					background-color: cadetblue;
+				}
+				.container {
+					display: grid;
+					grid-template-columns: .5fr 1fr .5fr;	
+					height: 80px;
+				}
+				.logo-container {
+					grid-row: 1; 
+					grid-column: 2;
+					display:flex;
 				}
 				.logo {
-						display: flex;
-						align-items: center;
+					display: flex;
+					align-items: center;
 				}
 
 				.logo span {
-						padding-left: 10px;
+					padding-left: 10px;
 				}
 			`}</style>
 		</>

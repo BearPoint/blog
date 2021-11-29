@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 
-export const Information = () => {
+
+export const Tag = () => {
 	return (
 		<>
 			<div className="container">
@@ -10,10 +11,11 @@ export const Information = () => {
 			</div>
 			<style jsx>{`
                 .container{
-                    background-color: red
                 }
                 .infoImage{
-                    margin:o auto
+					text-align: center;
+                    margin: 0 auto;
+					border-radius: 50%;
                 }
         `}</style>
 		</>
